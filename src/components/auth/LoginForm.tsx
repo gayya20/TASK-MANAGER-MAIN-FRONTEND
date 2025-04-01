@@ -36,8 +36,7 @@ const onFinish = async (values: LoginRequest) => {
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
       
-      // Use the login from context to update the auth state
-      // (This ensures isAuthenticated is set to true)
+      
       await login(values);
       
       // Navigate to dashboard
@@ -114,7 +113,6 @@ const onFinish = async (values: LoginRequest) => {
           </Space>
         </div>
 
-        {/* Display error message if there is one */}
         {error && (
           <Alert
             message="Login Error"
