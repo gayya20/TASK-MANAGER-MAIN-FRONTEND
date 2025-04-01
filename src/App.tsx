@@ -16,7 +16,7 @@ const UserDashboard = lazy(() => import('./pages/UserDashboard'));
 const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     return <MainLayout>{children}</MainLayout>;
   };
-// The TaskManagement module is loaded from the micro-frontend
+// The TaskManagement loaded from micro-frontend
 const TaskManagementModule = lazy(() => import('tasks/TaskManagement'));
 
 // Loading component for suspense fallback

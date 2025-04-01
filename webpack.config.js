@@ -7,7 +7,7 @@ const deps = require('./package.json').dependencies;
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js', // Note: changed to .js
+  entry: './src/index.js', 
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: 'auto',

@@ -17,7 +17,6 @@ export const login = async (credentials: LoginRequest): Promise<LoginResponse> =
     return response.data;
   } catch (error) {
     console.error("AuthService: Login request failed", error);
-    // Pass through the axios error to preserve response data
     throw error;
   }
 };

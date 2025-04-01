@@ -215,7 +215,7 @@ const UsersManagementPage: React.FC = () => {
   title={editingUser ? "Edit User" : "Create User"}
   visible={modalVisible}
   onCancel={handleModalCancel}
-  footer={null} // We'll use the buttons in the form
+  footer={null} 
   width={600}
 >
   <UserForm
