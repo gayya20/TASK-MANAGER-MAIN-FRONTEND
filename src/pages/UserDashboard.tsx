@@ -32,10 +32,6 @@ const UserDashboard: React.FC = () => {
     upcomingDeadlines: 0
   });
 
-  // Fetch task statistics
-  // Import axios or your API service
-
-// In your UserDashboard component
 useEffect(() => {
   const fetchTaskStats = async () => {
     setLoading(true);

@@ -71,7 +71,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Login failed. Please try again.');
-      throw err; // Rethrow so the component can catch it
+      throw err; 
     } finally {
       setIsLoading(false);
     }
@@ -125,7 +125,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       const response = await authService.setupPassword(data);
       
       if (response.success) {
-        // Will need to login after setting up password
+        
         message.success(response.message);
       } else {
         throw new Error(response.message || 'Password setup failed');

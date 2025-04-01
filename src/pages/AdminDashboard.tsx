@@ -53,7 +53,6 @@ const AdminDashboard: React.FC = () => {
         const completedTasks = tasks.filter((task: { isCompleted: any; }) => task.isCompleted).length;
 
         
-        // Set stats (some are placeholders, should be from actual API)
         setStats({
           totalUsers: users.length,
           activeUsers,
@@ -113,7 +112,6 @@ const AdminDashboard: React.FC = () => {
     <MainLayout>
       <Title level={2}>Admin Dashboard</Title>
       
-      {/* Stats Cards */}
       <Row gutter={16} style={{ marginBottom: 24 }}>
         <Col xs={24} sm={12} md={8} lg={6}>
           <Card>
@@ -158,7 +156,6 @@ const AdminDashboard: React.FC = () => {
         </Col>
       </Row>
 
-      {/* Recent Users */}
       <Card 
         title="Recent Users" 
         extra={<Button type="link" onClick={() => navigate('/users')}>View All</Button>}
@@ -173,7 +170,6 @@ const AdminDashboard: React.FC = () => {
         />
       </Card>
       
-      {/* Task Management Module will be loaded here */}
       <Card title="Recent Tasks">
         <div style={{ textAlign: 'center', padding: 24 }}>
           <Button 
